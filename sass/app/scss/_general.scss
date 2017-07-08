@@ -1,0 +1,17 @@
+@import "zmienne";
+@import "mixins";
+
+*{
+    box-sizing:border-box;
+}
+body {
+    background-color: $main-color;
+    margin:0;
+    font-family: $main-font;
+}
+
+
+header,section{
+    width:100%;
+}
+

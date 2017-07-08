@@ -1,0 +1,55 @@
+    @import "zmienne";
+@import "mixins";
+section {
+    background-image: url(../img/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: top;
+    .form-container {
+        width: 250px;
+        position: absolute;
+        padding:150px 0 0 0;
+        right: 20%;
+        color: #fff;
+        h2 {
+            color: #fff;
+            font-size: 0.8em;
+        }
+        .form-span {
+            color: $gold-color;
+        }
+        .form-content {
+            background-color: $main-color;
+            padding: 10px;
+            color: #fff;
+            h3 {
+                font-size: 0.9em;
+            }
+            input:not([type="submit"]) {
+                width: 100%;
+                margin: 0;
+                margin-bottom: 10px;
+                border: 0;
+                padding: 0;
+                height: 30px;
+            }
+            #text {
+                height: 50px;
+                margin: 0 0 5px 0;
+            }
+            #submit {
+                display: inline-block;
+                height: 40px;
+                width: 70px;
+                text-align: center;
+                border: 0;
+                background-color: $gold-color;
+                padding: 0;
+                cursor: pointer;
+                font-weight: 700;
+            }
+        }
+    }
+}
+

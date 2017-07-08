@@ -1,0 +1,45 @@
+@import "zmienne";
+@import "mixins";
+#footer {
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    color: #fff;
+    padding: 20px 0;
+    z-index: 10;
+    background-color: $grey-color;
+}
+
+.footer-phone {
+    display: inline-block;
+    float: left;
+    width:50%;
+    .fa {
+        @include fa-header;
+        background-color: $yellow-color;
+        line-height: 45px;
+        width:45px;
+        height:45px;
+        text-align: center;
+        color:$grey-color;
+    }
+}
+
+.footer-mail {
+    display: inline-block;
+    width:50%;
+    .fa {
+        @include fa-header;
+        background-color: $yellow-color;
+        line-height: 45px;
+        width:45px;
+        height:45px;
+        text-align: center;
+        color:$grey-color;
+    }
+}
+
+.footer-content{
+    margin-top:50px;
+}
